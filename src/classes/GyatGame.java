@@ -6,11 +6,37 @@ import java.util.ArrayList;
 
 public class GyatGame {
  
-// en arrayliste til at holde styr på de forkerte gæt vi har lavet 
+    private int guessedNumber;
+    private int  secretNumber;
 
 
-    public GyatGame(String word){
+    public GyatGame(int start){
+        
+        secretNumber = start;
+    }
+
+    public int randomNumber (){
+        
+        return secretNumber;
+    }
+
+    public boolean guess(int guess){
+        guessedNumber = guess;
+
+        if(guessedNumber== secretNumber){
+            secretNumber= randomNumber();
+            return true;
+        }
+        else{
+            secretNumber= randomNumber();
+            return false;
+        }
+
         
     }
-    
+
+ 
+
+
+
 }

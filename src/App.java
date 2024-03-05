@@ -16,11 +16,14 @@ public class App  extends PApplet{
     }
 
     public void setup(){
-     game = new GyatGame();
+     game = new GyatGame(8);
     }
 
     public void draw(){
         background(0);
+        if (game.guess(key)) {
+            background(0,255,0);
+        }
     }
 
     public void keyPressed(){
