@@ -4,12 +4,12 @@ import processing.core.PApplet;
 import java.util.ArrayList; 
 //import java.util.List;
 
-public class Hangman {
+public class GyatGame {
  
 // en arrayliste til at holde styr på de forkerte gæt vi har lavet 
 
 
-    public Hangman(String word){
+    public GyatGame(String word){
         
     }
 

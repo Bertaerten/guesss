@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import classes.*;
 
-public class HangmanTest {
+public class gyatGameTest {
 
     
 }

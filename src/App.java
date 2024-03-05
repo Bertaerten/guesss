@@ -4,7 +4,7 @@ import classes.*;
 
 public class App  extends PApplet{
 
-    Hangman game;
+
     public static void main(String[] args) {
         String[] processingArgs = {"MySketch"};
 		App mySketch = new App();
