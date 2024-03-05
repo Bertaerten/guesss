@@ -33,6 +33,11 @@ public class GyatGame {
         }
         else{
             secretNumber= randomNumber();
+<<<<<<< HEAD
+            return false;
+        }    
+    }
+=======
             correct = false;
             return correct;
         }
@@ -46,4 +51,5 @@ public class GyatGame {
     }
 
 
+>>>>>>> 27678bdb1204a97b6d4d7bf394eb81f885362244
 }
