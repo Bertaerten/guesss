@@ -12,6 +12,5 @@ public class GyatGame {
     public GyatGame(String word){
         
     }
-
     
 }

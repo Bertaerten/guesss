@@ -3,7 +3,7 @@ import processing.core.*;
 import classes.*;
 
 public class App  extends PApplet{
-
+   GyatGame game;
 
     public static void main(String[] args) {
         String[] processingArgs = {"MySketch"};
@@ -16,7 +16,7 @@ public class App  extends PApplet{
     }
 
     public void setup(){
-
+     game = new GyatGame();
     }
 
     public void draw(){

@@ -11,11 +11,19 @@ import org.junit.Test;
 import classes.*;
 
 public class gyatGameTest {
+    final String[] testWords = {"7", "8"};
 
     @Test
-    public void charArraySet(){
-        
-            final GyatGame game = new GyatGame("word");
+    public void guessTrue(){
+        final GyatGame game = new GyatGame("7");
 
-        }    
+        assertTrue(game.guess("7")); 
+    }
+
+    @Test
+    public void guessFalse(){
+        final GyatGame game = new GyatGame("7");
+
+        assertFalse(game.guess("8")); 
+    }
 }
