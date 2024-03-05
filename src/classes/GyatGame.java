@@ -24,6 +24,7 @@ public class GyatGame {
     public boolean guess(int guess){
         
         guessedNumber = guess;
+        System.out.println(guessedNumber);
 
         if(guessedNumber== secretNumber){
             secretNumber= randomNumber();
