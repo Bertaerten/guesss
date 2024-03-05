@@ -16,20 +16,15 @@ public class App  extends PApplet{
     }
 
     public void setup(){
-        game = new Hangman("Multiplication");
+
     }
 
     public void draw(){
         background(0);
-        game.drawGuessedLetters(this);
-        if(!game.isAlive()){
-            background(125);
-        }
     }
 
     public void keyPressed(){
         if (key != CODED){
-            game.guess(key);
         }
     }
 }
