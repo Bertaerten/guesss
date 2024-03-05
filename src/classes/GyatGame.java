@@ -30,13 +30,6 @@ public class GyatGame {
         else{
             secretNumber= randomNumber();
             return false;
-        }
-
-        
+        }    
     }
-
- 
-
-
-
 }
