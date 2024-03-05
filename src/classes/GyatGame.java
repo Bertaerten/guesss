@@ -8,6 +8,7 @@ public class GyatGame {
  
     private int guessedNumber;
     private int  secretNumber;
+    private boolean correct ;
 
 
     public GyatGame(int start){
@@ -21,15 +22,33 @@ public class GyatGame {
     }
 
     public boolean guess(int guess){
+        
         guessedNumber = guess;
 
         if(guessedNumber== secretNumber){
             secretNumber= randomNumber();
-            return true;
+            correct = true;
+            return correct;
         }
         else{
             secretNumber= randomNumber();
+<<<<<<< HEAD
             return false;
         }    
     }
+=======
+            correct = false;
+            return correct;
+        }
+
+        
+    }
+
+ 
+    public boolean isWon() {
+        return correct;
+    }
+
+
+>>>>>>> 27678bdb1204a97b6d4d7bf394eb81f885362244
 }

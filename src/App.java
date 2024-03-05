@@ -21,13 +21,16 @@ public class App  extends PApplet{
 
     public void draw(){
         background(0);
-        if (game.guess(key)) {
+        if (game.isWon()) {
             background(0,255,0);
         }
     }
 
+    
+
     public void keyPressed(){
         if (key != CODED){
+            game.guess(key);
         }
     }
 }
