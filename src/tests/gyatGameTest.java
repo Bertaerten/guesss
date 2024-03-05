@@ -12,5 +12,10 @@ import classes.*;
 
 public class gyatGameTest {
 
-    
+    @Test
+    public void charArraySet(){
+        
+            final GyatGame game = new GyatGame("word");
+
+        }    
 }
