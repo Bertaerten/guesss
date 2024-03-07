@@ -1,7 +1,9 @@
 package classes;
 
 import processing.core.PApplet;
-import java.util.ArrayList; 
+import processing.core.PVector;
+
+import java.util.*; 
 //import java.util.List;
 
 public class GyatGame {
@@ -17,14 +19,14 @@ public class GyatGame {
     }
 
     public int randomNumber (){
-        
+        secretNumber = (int)(Math.random()*10);
         return secretNumber;
     }
+
 
     public boolean guess(int guess){
         
         guessedNumber = guess;
-        System.out.println(guessedNumber);
 
         if(guessedNumber== secretNumber){
             secretNumber= randomNumber();

@@ -16,7 +16,7 @@ public class App  extends PApplet{
     }
 
     public void setup(){
-     game = new GyatGame(8);
+     game = new GyatGame(10);
     }
 
     public void draw(){
