@@ -19,7 +19,8 @@ public class GyatGame {
     }
 
     public int randomNumber (){
-        secretNumber = (int)(Math.random()*10);
+        secretNumber = (int)(Math.random()*10);//giver et tilfældigt tal mellem 0 og 9 inkluderende de to
+        System.out.println(secretNumber);
         return secretNumber;
     }
 
