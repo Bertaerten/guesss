@@ -28,13 +28,19 @@ public class gyatGameTest {
     }
 
     @Test
-    public void randomGame() {
+    public void testRandomNumber() {
+        final int antal = 100;
+        final int ForventetTalMængde = 10;
+        int hvorMange1 = 0;
+        GyatGame game = new GyatGame(5);
 
-        final GyatGame game = new GyatGame(0);
-        for (int i = 0; i < 1; i++){
-            game.randomNumber();
+        for (int i = 0; i < antal; i++) {
+            int randomNumber = game.randomNumber();
+            if (randomNumber == 1) {
+                hvorMange1++;
+            }
         }
-
-       assertEquals(5, 5);
+        
+        assertEquals(ForventetTalMængde, hvorMange1);
     }
 }
