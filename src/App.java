@@ -30,7 +30,7 @@ public class App  extends PApplet{
 
     public void keyPressed(){
         if (key != CODED){
-            game.guess(key);
+            game.guess(key-48);//minus 48, da det er 0 i Ascii, derfor bliver vores tal rigtige
         }
     }
 }
