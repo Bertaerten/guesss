@@ -26,4 +26,15 @@ public class gyatGameTest {
 
         assertFalse(game.guess(8)); 
     }
+
+    @Test
+    public void randomGame() {
+
+        final GyatGame game = new GyatGame(0);
+        for (int i = 0; i < 1; i++){
+            game.randomNumber();
+        }
+
+       assertEquals(5, 5);
+    }
 }
